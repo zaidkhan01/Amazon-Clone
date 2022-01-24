@@ -18,17 +18,20 @@ function Header() {
         <input type="text" className="header_searchInput" />
         <SearchIcon className="header_searchIcon" />
       </div>
-      <div className="header_nav">
-        <div className="header_option">
-          <span>
-            {" "}
-            <div className="header_optionLineOne">Hello Guest</div>
-          </span>
 
-          <span>
-            <div className="header_optionLineTwo">Sign In</div>
-          </span>
-        </div>
+      <div className="header_nav">
+        <Link to="/login">
+          <div className="header_option">
+            <span>
+              {" "}
+              <div className="header_optionLineOne">Hello Guest</div>
+            </span>
+
+            <span>
+              <div className="header_optionLineTwo">Sign In</div>
+            </span>
+          </div>
+        </Link>
         <div className="header_option">
           <span>
             {" "}
